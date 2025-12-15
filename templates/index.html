@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Observatory </title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <form action="{{url_for('search')}}" method="get">
+        <input type="text" name="search-box" id="searchBox" placeholder="Search.....">
+         <button type="submit">Explore</button>
+    </form>
+    <div class="landing">
+        {% if media_type is true %}
+        <iframe src="{{ apod.url }}"></iframe>
+        {% else %}
+        <img src="{{ apod.url }}" alt="">
+        {% endif %}
+        <h1>{{apod.title}}</h1>
+        <h4>{{apod.date}}</h4>
+        <p>{{apod.explanation}}</p>
+
+    </div>
+</body>
+</html>
