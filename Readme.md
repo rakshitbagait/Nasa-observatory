@@ -20,10 +20,10 @@ The application is intentionally kept simple so developers can clearly understan
 ## 🖼️ Application Screenshots
 
 ### Home Page – APOD View
-![Home Page](../assets/home_page.png)
+![Home Page](/assets/home_page.png)
 
 ### Search Results Page
-![Search Results](../assets/image.png)
+![Search Results](/assets/image.png)
 
 ---
 
